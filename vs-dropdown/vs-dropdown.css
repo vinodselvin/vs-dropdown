@@ -1,0 +1,230 @@
+.v-dropdown {
+    width: 250px;
+  }
+  .v-btn{
+      cursor: pointer;
+  }
+  .v-btn:hover{
+    border: 1px solid #ccc;  
+  }
+  .v-btn,
+  .v-search {
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    color: #747474;
+    /* box-shadow: 1px 1px 4px #ccc; */
+  }
+  .v-btn {
+    width: calc(100% - 22px);
+  }
+  .v-btn > span {
+    width: calc(100% - 32px);
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .v-btn > img {
+    float: right;
+  }
+  .v-list ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 4px #ededed;
+  }
+  .v-list ul li,
+  .v-f-list ul li {
+    list-style: none;
+    border: 1px solid #ededed;
+    box-shadow: 2px 2px 4px #ededed;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .vs {
+    width: 10px;
+    height: 10px;
+    padding-top: 15px;
+  }
+
+  .vs-up {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    transform: rotate(180deg);
+  }
+
+  .v-clear {
+    padding-right: 30px;
+    color: #747474;
+    cursor: pointer;
+  }
+
+  .v-submit {
+    text-align: right;
+    color: #78d9ba;
+    cursor: pointer;
+  }
+
+  .v-submit:hover,
+  .v-clear:hover {
+    opacity: 0.7;
+  }
+
+  .v-control {
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #ededed;
+    width: 100%;
+    font-weight: bold;
+    background-color: white;
+  }
+  .v-f-list {
+    margin-top: 4px !important;
+  }
+  .v-handle {
+    /* padding-top: 20px; */
+    float: right;
+    padding-right: 15px;
+  }
+  .v-list-data {
+    max-height: 163px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .v-list-data li {
+    border-top: 0px !important;
+  }
+  .v-list-data li,
+  .v-f-list li {
+    height: 40px;
+    line-height: 40px;
+  }
+  body {
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+  }
+
+  .v-list-data .v-checkbox {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .v-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #3f424b;
+  }
+
+  /* Hide the browser's default checkbox */
+  .v-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+  }
+
+  /* Create a custom checkbox */
+  .v-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    margin-top: 13px;
+    background-color: white;
+    border: 1px solid #3f424b;
+    border-radius: 3px;
+  }
+
+  .v-checkbox .v-checkmark.partial:after {
+    left: 5px;
+    top: 0.5px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0px 1px 0px 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .v-checkbox.active {
+    color: #777ed1;
+    font-weight: bold;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .v-checkbox:hover input ~ .v-checkmark {
+    background-color: white;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .v-checkbox input:checked ~ .v-checkmark {
+    background-color: #3f424b;
+  }
+
+  /* Create the v-checkmark/indicator (hidden when not checked) */
+  .v-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the v-checkmark when checked */
+  .v-checkbox input:checked ~ .v-checkmark:after {
+    display: block;
+  }
+
+  .v-checkbox input:checked .v-checkbox {
+    font-weight: bold;
+  }
+
+  /* Style the v-checkmark/indicator */
+  .v-checkbox .v-checkmark:after {
+    left: 6px;
+    top: 0.5px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    margin: 2px !important;
+    padding: 2px !important;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ededed;
+    border-radius: 15px;
+  }
+
+  .hidden{
+      display: none;
+  }

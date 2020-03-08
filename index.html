@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Selectpicker</title>
+    <script src="./vs-dropdown/vs-dropdown.js"></script>
+    <link rel="stylesheet" href="./vs-dropdown/vs-dropdown.css">
+</head>
+<body>
+    <h3>Default Select</h3>
+    <vs-dropdown
+      v-label="Colours"
+      v-options='["Blue", "Black", "Red", "Green"]'
+    ></vs-dropdown>
+    
+    <h3>Select with Search</h3>
+    <vs-dropdown
+      v-label="Colours"
+      v-options='["Blue", "Black", "Red", "Green"]'
+      searchable="true"
+      multiselect="false"
+    ></vs-dropdown>
+
+    <h3>MultiSelect</h3>
+    <vs-dropdown
+      v-label="Colours"
+      v-options='["Blue", "Black", "Red", "Green"]'
+      searchable="false"
+      multiselect="true"
+    ></vs-dropdown>
+
+    <h3>Multiselect with Search</h3>
+    <vs-dropdown
+      v-label="Colours"
+      v-options='["Blue", "Black", "Red", "Green"]'
+      searchable="true"
+      multiselect="true"
+    ></vs-dropdown>
+
+    
+
+    <h3>With array of JSON objects</h3>
+    <vs-dropdown
+    v-label="Poop"
+    v-options='[{ "title": "Button", "path": "demo-button", "selected": true },
+    { "title": "Selection Control", "path": "demo-selection-control" },
+    { "title": "Input", "path": "demo-input" },
+    { "title": "Snackbar", "path": "demo-snack-bar" },
+    { "title": "Chips", "path": "demo-chips" },
+    { "title": "Progress Tabs", "path": "demo-vertical-tabs" },
+    { "title": "Typography", "path": "demo-wip" },
+    { "title": "Card", "path": "demo-wip" },
+    { "title": "Pagination", "path": "demo-wip" },
+    { "title": "Progress Tabs", "path": "demo-wip" }]'
+    searchable="true"
+    multiselect="true">
+
+    </vs-dropdown>
+</body>
+</html>
